@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>伊甸・阿卡迪亞島｜Eden Arcadia Island</title>
+  <style>
+    :root { --gold:#c7a05a; --blue:#07324b; --cyan:#29d9ff; --paper:#fff8ea; }
+    *{box-sizing:border-box} body{margin:0;font-family:"Noto Serif TC","Microsoft JhengHei",serif;background:#07131c;color:white;}
+    .bar{position:sticky;top:0;z-index:5;background:rgba(8,20,30,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.12);padding:12px 18px;display:flex;gap:12px;align-items:center;justify-content:space-between}
+    .url{font-family:ui-monospace,monospace;background:#111;border:1px solid #333;border-radius:999px;padding:10px 16px;flex:1;max-width:760px;color:#d9fff9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pill{background:var(--gold);color:#211500;border:0;border-radius:999px;padding:10px 16px;font-weight:700;cursor:pointer}.ghost{background:#1e3342;color:white;border:1px solid #44606e}
+    .hero{min-height:82vh;background:linear-gradient(90deg,rgba(1,27,43,.92),rgba(1,27,43,.35)),url('assets/resort_site.png') center/cover;display:grid;place-items:center;padding:40px 18px;text-align:left}.box{max-width:920px;width:100%}.logo{font-size:28px;letter-spacing:.08em;color:#ffe2a6}.title{font-size:clamp(42px,8vw,92px);line-height:1.05;margin:18px 0 12px;text-shadow:0 8px 30px #000}.subtitle{font-size:22px;line-height:1.8;max-width:620px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;padding:24px;background:#fff6e8;color:#123}.card{border:1px solid #dbc38d;border-radius:16px;padding:16px;background:white;box-shadow:0 10px 25px rgba(0,0,0,.08)}.card img{width:100%;border-radius:12px;display:block}.card h3{margin:12px 0 6px;color:#0a4666}.notice{padding:38px 18px;background:#0b2030;text-align:center}.notice b{color:#ffdf95}.poster{display:none;min-height:100vh;background:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.1)),url('assets/death_island_poster.png') center/cover;padding:80px 18px}.poster .panel{max-width:760px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:28px;backdrop-filter:blur(5px)}.poster h1{font-size:clamp(42px,8vw,100px);margin:0 0 12px;text-shadow:0 0 22px #000}.warning{color:#ffb3a3;font-family:ui-monospace,monospace;letter-spacing:.08em}.small{opacity:.8;font-size:14px}.darkmode .hero,.darkmode .cards,.darkmode .notice{display:none}.darkmode .poster{display:block}.footer{padding:18px;text-align:center;background:#06101a;color:#aaa}.blink{animation:blink 1s steps(2) infinite}@keyframes blink{50%{opacity:.3}}
+  </style>
+</head>
+<body>
+  <div class="bar">
+    <div class="url">🔒 https://www.eden-arcadia-island.com</div>
+    <button class="pill" onclick="document.body.classList.toggle('darkmode')">切換：旅遊官網 / 死亡之島</button>
+    <button class="pill ghost" onclick="location.hash='free-ticket';document.body.classList.add('darkmode')">免費旅行券</button>
+  </div>
+  <main class="hero">
+    <section class="box">
+      <div class="logo">🌴 伊甸・阿卡迪亞島 EDEN ARCADIA ISLAND</div>
+      <h1 class="title">海上的天堂，夢幻的假期。</h1>
+      <p class="subtitle">歡迎來到聖青嵐海景溫泉度假大飯店。三天兩夜免費體驗名額限量開放，邀請您見證阿卡迪亞島最美的一面。</p>
+      <button class="pill" onclick="document.body.classList.add('darkmode')">立即領取免費旅行券 →</button>
+    </section>
+  </main>
+  <section class="cards">
+    <div class="card"><img src="assets/resort_site.png" alt="伊甸阿卡迪亞島旅遊官網"><h3>官方旅遊頁</h3><p>藍天、郵輪、白沙灘，以及完美到有點可疑的套裝行程。</p></div>
+    <div class="card"><img src="assets/death_island_poster.png" alt="死亡之島海報"><h3>第 1 章：免費的旅行</h3><p>免費旅行券開啟之後，夢幻度假島開始露出真正的表情。</p></div>
+    <div class="card"><img src="assets/preview.png" alt="網站預覽"><h3>宣傳截圖</h3><p>可拿去給朋友看：前半段像真的官網，後半段直接屍變。</p></div>
+  </section>
+  <section class="notice"><h2>旅客須知</h2><p>若聽見海岸警報，請留在飯店內。若看見海灘上有移動人影，請勿靠近。<br><b>本島仍安全，請放心享受假期。</b></p></section>
+  <section class="poster" id="free-ticket">
+    <div class="panel">
+      <div class="warning blink">⚠ EMERGENCY BROADCAST INTERRUPTED</div>
+      <h1>死亡之島：伊甸・阿卡迪亞</h1>
+      <p>免費的旅行券，開啟了我們的噩夢。</p>
+      <p>最後更新：2029/06/03 23:41。島上通訊中斷，聖青嵐飯店周邊出現大量感染者。看到這行字的人——不要登島。</p>
+      <p class="small">Chapter 1: The Free Trip｜The Grand Aorashi Resort & Spa</p>
+    </div>
+  </section>
+  <footer class="footer">© 2029 Eden Arcadia Island Tourism Board. All rights reserved. / 若頁面變暗，請立即撤離。</footer>
+</body>
+</html>
